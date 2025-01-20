@@ -27,6 +27,9 @@ select * from iss.isssolicitacaows i
 - Em media type, selecione o tipo application/xml e informe o arquivo soap para envio.
 
 2. **Postman**: Ao utilizar a ferramenta do **Postman**, se faz necessário adequar a estrutura, podendo ser realizada de 2 formas:
+
+- Baixe a [coleção postman](https://drive.google.com/drive/folders/1SVV9MgWIKsTDLMfcIYBXDeAxFQ-TNzI4?usp=drive_link) NFSe Endpoint.postman_collection para facilitar o desempenho (opcional)
+
 - **POST SOAP**: Utilizando o envelopamento SOAP-XML, no Postman, sendo o mesmo arquivo que pode ser utilizado no SOAP UI, realizando as configurações em:
 ```
     **url**
@@ -54,7 +57,7 @@ Criar uma váriavel com um nome que desejar, por exemplo xml:
 | xml               | default | pegar um xml e colocar apenas os dados da tag <EnviarLoteRpsSincronoEnvio> |
 ```
 - Essa variável criada, será utilizada no escopo da requisição post a seguir.
-- Foi informado a tag EnviarLoteRpsSincronoEnvio, porém pode ser dos outros tipos de post que estão disponíveis no sistema (SUBSTITUIR_NFSE, ENVIAR_LOTE_RPS_SINCRONO_SINCRONO).
+- Foi informado a tag EnviarLoteRpsSincronoEnvio, porém pode ser dos outros tipos de post que estão disponíveis no sistema (ConsultarLoteRpsEnvio, CancelarNfseEnvio, ConsultarNfseServicoPrestadoEnvio, ConsultarNfseServicoTomadoEnvio).
 - OBS: Lembrar de selecionar o Environment no postman para ter acesso a variável(canto superior esquerdo terá uma opção com o nome No environment).
 
 Configurando a requisição POST:
